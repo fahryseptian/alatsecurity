@@ -1,0 +1,121 @@
+Bagian ini mencakup alat yang paling umum digunakan dalam pengujian penetrasi.
+
+Distribusi Linux yang Berfokus pada Pengujian Penetrasi
+
+Kali Linux : Salah satu distribusi pengujian penetrasi Linux yang paling terkenal, Kali Linux didasarkan pada Debian GNU/Linux dan telah berevolusi dari distribusi sebelumnya seperti WHoppiX, WHAX, dan BackTrack. Ini sudah dilengkapi dengan ratusan alat untuk pengujian penetrasi, dan komunitas terus menyumbangkan alat baru. Kali Linux dapat diakses melalui Live image pada CD/DVD/USB/PXE, menyediakan instalasi bare-metal.
+Parrot OS : Distribusi Linux berbasis Debian ini berfokus pada pengujian penetrasi, forensik digital, dan perlindungan privasi.
+BlackArch Linux : BlackArch Linux dikemas dengan lebih dari 1900 alat pengujian penetrasi keamanan. Distribusi ini dapat diunduh dari situs resminya, di mana dokumentasinya juga tersedia.
+Alat untuk Pengintaian Pasif
+
+Nslookup, Host, dan Dig : Ini adalah alat berbasis DNS yang digunakan untuk pengintaian pasif. Mereka memungkinkan Anda mengumpulkan informasi tentang suatu domain, seperti alamat IP yang terkait dengannya.
+Whois : Utilitas Whois digunakan untuk menanyakan database Whois, yang berisi informasi tentang pendaftaran domain. Ini memberikan detail seperti pemilik domain, tanggal pendaftaran, dan informasi kontak. Namun, karena pembatasan GDPR, jumlah informasi yang tersedia melalui Whois menjadi terbatas.
+FOCA (Organisasi Sidik Jari dengan Arsip yang Dikumpulkan): FOCA adalah alat yang dirancang untuk menemukan metadata dan informasi tersembunyi di berbagai jenis dokumen, termasuk situs web, file Microsoft Office, PDF, dan banyak lagi. Ini dapat digunakan untuk mengekstrak informasi seperti data EXIF ​​dari file grafik dan menganalisis URL.
+ExifTool : ExifTool adalah alat populer untuk mengekstrak informasi EXIF ​​(Exchangeable Image File Format) dari gambar. Ini dapat mengungkapkan detail tentang perangkat yang digunakan untuk mengambil gambar, seperti model kamera, tanggal dan waktu, koordinat GPS, dan banyak lagi.
+theHarvester : theHarvester adalah alat serbaguna yang digunakan untuk enumerasi DNS. Itu dapat menanyakan berbagai sumber data, termasuk mesin pencari seperti Google dan Bing, platform media sosial seperti Twitter dan LinkedIn, server PGP, dan banyak lagi. Ini membantu mengumpulkan informasi tentang domain target, seperti subdomain dan alamat email terkait.
+Shodan : Shodan adalah mesin pencari canggih yang memindai dan mengindeks perangkat yang terhubung ke Internet. Ini memungkinkan pengguna untuk mencari perangkat, layanan, atau kerentanan tertentu. Shodan dapat membantu mengidentifikasi sistem yang terbuka dan berpotensi rentan, seperti perangkat IoT atau perangkat infrastruktur yang salah dikonfigurasi.
+Maltego : Maltego adalah alat yang banyak digunakan untuk pengintaian pasif yang mengumpulkan informasi dari catatan publik. Ini mendukung berbagai integrasi dengan sumber pihak ketiga dan menawarkan versi berbeda, termasuk edisi komunitas gratis. Maltego dapat digunakan untuk mencari informasi tentang individu, perusahaan, organisasi, dan lainnya, menyajikan hasilnya secara hierarki dan terorganisir.
+Recon-ng : Recon-ng adalah alat berbasis menu yang dirancang khusus untuk mengotomatisasi pengumpulan informasi OSINT. Muncul dengan berbagai modul yang memungkinkan pengguna melakukan pencarian terperinci pada catatan publik, file, catatan DNS, dan sumber lainnya. Recon-ng mendukung kueri alat dan sumber pihak ketiga seperti Shodan, platform media sosial, dan mesin pencari.
+Censys : Censys menyediakan informasi tentang perangkat dan jaringan di Internet. Censys menawarkan antarmuka web dan API serta menyediakan akses gratis dengan batasan jumlah kueri.
+Alat untuk Pengintaian Aktif
+
+Nmap dan Zenmap : Nmap adalah alat komprehensif untuk pengintaian aktif, menyediakan berbagai opsi pemindaian untuk menghitung host dan menemukan port terbuka. Zenmap adalah alat antarmuka pengguna grafis (GUI) yang meningkatkan kegunaan Nmap dan menawarkan fitur seperti visualisasi topologi jaringan.
+Enum4linux : Enum4linux dirancang khusus untuk menghitung share SMB (Server Message Block) dan implementasi Samba yang rentan. Ini membantu mengidentifikasi pengguna dan menghitung share SMB yang tersedia di host target.
+Alat Umum untuk Pemindaian Kerentanan
+
+Alat-alat ini menyediakan berbagai kemampuan untuk pemindaian kerentanan, pengujian keamanan aplikasi web, dan mendeteksi kelemahan keamanan umum. Mereka banyak digunakan oleh para profesional keamanan dan penguji penetrasi untuk menilai keamanan sistem dan aplikasi.
+
+OpenVAS : OpenVAS adalah pemindai kerentanan sumber terbuka yang memungkinkan pemindaian kerentanan terperinci pada host dan jaringan. Ia menawarkan berbagai layanan dan alat dan dapat digunakan untuk memindai dan mengidentifikasi kerentanan. Itu dapat dijadwalkan dan dikonfigurasi untuk melakukan pemindaian menggunakan metode dan antarmuka yang berbeda.
+Nessus : Nessus adalah pemindai kerentanan yang memungkinkan pemantauan berkelanjutan dan analisis kepatuhan. Ini menyediakan fitur untuk memindai dan mendeteksi kerentanan, dan mendukung integrasi dengan produk keamanan lainnya.
+Nexpose : Nexpose, dibuat oleh Rapid7, adalah pemindai kerentanan populer yang digunakan oleh penguji penetrasi profesional. Ia menawarkan fitur untuk pemindaian kerentanan dan dapat berintegrasi dengan alat keamanan lainnya.
+Qualys : Qualys adalah perusahaan keamanan yang menyediakan layanan manajemen dan pemantauan kerentanan berbasis cloud. Ini menawarkan pemantauan berkelanjutan, manajemen kerentanan, dan pemeriksaan kepatuhan. Qualys berinteraksi dengan berbagai jenis pemindai dan agen untuk memberikan penilaian keamanan yang komprehensif.
+SQLmap : SQLmap adalah alat yang digunakan untuk mengotomatisasi deteksi dan eksploitasi kerentanan injeksi SQL dalam aplikasi web. Ini membantu menghitung aplikasi yang rentan dan dapat mengeksploitasi teknik injeksi SQL.
+Nikto : Nikto adalah pemindai kerentanan web sumber terbuka yang memungkinkan pemindaian kerentanan web umum. Ini dapat digunakan untuk mendeteksi kelemahan keamanan dalam aplikasi web dan server.
+OWASP ZAP : OWASP Zed Attack Proxy (ZAP) adalah alat keamanan gratis yang banyak digunakan yang menyediakan kemampuan pemindaian kerentanan web. Itu juga dapat digunakan sebagai proxy web dan fuzzer. ZAP menawarkan API untuk otomatisasi dan dikelola secara aktif oleh komunitas kontributor yang besar.
+w3af : w3af adalah pemindai kerentanan aplikasi web sumber terbuka. Ini memungkinkan pemindaian kerentanan dalam aplikasi web dan menawarkan berbagai plugin untuk berbagai jenis pengujian kerentanan.
+DirBuster : DirBuster adalah alat yang dirancang untuk melakukan brute force penemuan direktori dan nama file di server aplikasi web. Ini adalah proyek tidak aktif, dan fungsinya telah diintegrasikan dan ditingkatkan di OWASP ZAP sebagai add-on.
+Alat Umum untuk Serangan Kredensial
+
+Alat-alat ini memberikan kemampuan berbeda untuk memecahkan kata sandi, menebak kredensial, dan menghasilkan daftar kata, melayani berbagai pengujian keamanan dan tujuan ofensif.
+
+John the Ripper : John the Ripper adalah alat populer untuk memecahkan kata sandi offline. Ini mendukung berbagai mode cracking dan dapat memecahkan kata sandi menggunakan pola pencarian atau daftar kata. Ia dapat menangani format ciphertext yang berbeda, termasuk varian DES, MD5, dan Blowfish. John the Ripper dapat digunakan untuk mengekstrak password dari berbagai sumber, seperti file password dan Kerberos AFS.
+Cain : Cain (atau Cain and Abel) adalah alat yang digunakan untuk pemulihan kata sandi pada sistem berbasis Windows. Ia dapat melakukan penangkapan paket, memecahkan kata sandi terenkripsi menggunakan kamus dan serangan brute force, dan menggunakan teknik lain untuk memulihkan kredensial pengguna.
+Hashcat : Hashcat adalah alat pemecah kata sandi yang sangat populer di kalangan penguji penetrasi. Ini menggunakan unit pemrosesan grafis (GPU) untuk mempercepat proses cracking. Ini mendukung berbagai algoritma dan memberikan fleksibilitas dalam menggunakan daftar kata dan mode serangan yang berbeda.
+Hydra : Hydra adalah alat untuk menebak dan memecahkan kredensial dengan mencoba kombinasi nama pengguna/kata sandi terhadap server target seperti server web, server FTP, server SSH, dan server file. Ini mendukung serangan kamus dan brute force dan dapat digunakan untuk mengotomatiskan peretasan kredensial.
+RainbowCrack : RainbowCrack adalah alat yang mengotomatiskan pemecahan kata sandi menggunakan tabel yang telah dihitung sebelumnya yang dikenal sebagai tabel pelangi. Tabel pelangi mempercepat proses cracking dengan menyediakan cara untuk membalikkan fungsi hash kriptografi dan mendapatkan kata sandi dari nilai hash.
+Medusa dan Ncrack : Medusa dan Ncrack adalah alat yang mirip dengan Hydra, digunakan untuk melakukan serangan kredensial brute force terhadap sistem. Medusa dapat diinstal pada sistem Linux berbasis Debian, sedangkan Ncrack dapat diunduh dari situs resmi Nmap. Kedua alat tersebut mendukung berbagai protokol dan dapat melakukan serangan kamus dan brute force.
+CeWL : CeWL adalah alat yang digunakan untuk membuat daftar kata dengan merayapi situs web. Ini mengambil kata-kata dari situs target, memungkinkan pengguna untuk menghasilkan daftar kata khusus untuk peretasan kata sandi atau tujuan lainnya.
+Mimikatz : Mimikatz adalah alat serbaguna yang digunakan oleh penguji penetrasi, penyerang, dan bahkan malware untuk mengambil hash kata sandi dari memori. Ini biasanya digunakan sebagai alat pasca-eksploitasi dan dapat diunduh dari GitHub. Mimikatz juga diintegrasikan ke dalam Metasploit sebagai skrip Meterpreter.
+Patator : Patator adalah alat yang dirancang untuk serangan brute force pada berbagai jenis kredensial, seperti nama pengguna SNMPv3 dan kata sandi VPN. Ia menawarkan banyak modul dan dapat digunakan untuk mengotomatisasi serangan kredensial.
+Alat Umum untuk Ketekunan
+
+PowerSploit : Kumpulan modul PowerShell yang dapat digunakan untuk pasca eksploitasi dan fase penilaian lainnya.
+Empire : Kerangka kerja pasca-eksploitasi sumber terbuka berbasis PowerShell yang mencakup agen PowerShell Windows dan agen Python Linux.
+Alat Umum untuk Penghindaran
+
+Veil : Veil adalah kerangka kerja yang bekerja bersama dengan Metasploit untuk melewati pemeriksaan antivirus dan kontrol keamanan lainnya. Ia menawarkan teknik penghindaran dan dapat menghasilkan muatan yang kecil kemungkinannya terdeteksi oleh perangkat lunak antivirus. Veil tersedia untuk diunduh dari GitHub dan menyediakan dokumentasi terperinci di situs webnya.
+Tor : Tor adalah alat gratis yang memungkinkan pengguna menjelajahi web secara anonim dengan merutekan lalu lintas IP mereka melalui jaringan relai Tor. Ini menggunakan "perutean bawang" untuk mengenkripsi dan merutekan data melalui beberapa relay, sehingga sulit untuk melacak lokasi pengguna. Tor biasanya digunakan untuk tujuan privasi dan dapat membantu menghindari pemantauan dan kontrol keamanan.
+Proxychains : Proxychains adalah alat yang memaksa aplikasi tertentu untuk menggunakan Tor atau jenis proxy lainnya untuk koneksi TCP. Ini dapat digunakan untuk mengarahkan lalu lintas jaringan melalui proxy dan meningkatkan teknik penghindaran. Proxychains tersedia untuk diunduh dari GitHub.
+Enkripsi : Enkripsi memainkan peran penting dalam keamanan dan privasi, namun juga dapat menimbulkan tantangan dalam respons insiden dan forensik. Meskipun enkripsi melindungi informasi sensitif, enkripsi dapat digunakan oleh pelaku ancaman untuk menghindari deteksi dan mengaburkan aktivitas mereka. Produk keamanan dapat mencegat dan memeriksa lalu lintas terenkripsi, dan log serta metadata lainnya dapat dimanfaatkan untuk tujuan penyelidikan.
+Enkapsulasi dan Tunneling Menggunakan DNS : Pelaku ancaman telah mengeksploitasi teknik non-tradisional seperti terowongan DNS untuk mengambil data dari jaringan perusahaan. Penerowongan DNS melibatkan penggunaan protokol DNS untuk mengirim data yang tidak sah, seperti informasi kartu kredit yang dicuri, kekayaan intelektual, atau dokumen rahasia. Beberapa alat telah dikembangkan untuk melakukan penerowongan DNS, memungkinkan penjahat dunia maya melewati pemantauan dan kontrol keamanan.
+Kerangka Eksploitasi
+
+Metasploit : Metasploit adalah kerangka eksploitasi yang banyak digunakan yang dibuat oleh HD Moore dan sekarang dimiliki oleh Rapid7. Ia menawarkan edisi komunitas (gratis) dan edisi profesional. Metasploit memiliki arsitektur yang kuat, ditulis dalam Ruby, dan sudah diinstal sebelumnya di Kali Linux. Ini menyediakan berbagai modul untuk eksploitasi, tugas tambahan, encoder, payload, dan banyak lagi. Konsol Metasploit (msfconsole) digunakan untuk berinteraksi dengan kerangka kerja, dan mendukung database PostgreSQL untuk mengindeks dan mempercepat tugas.
+BeEF : BeEF adalah kerangka eksploitasi yang dirancang khusus untuk pengujian aplikasi web. Ini mengeksploitasi kerentanan browser dan berinteraksi dengan browser web untuk meluncurkan modul perintah terarah. BeEF memungkinkan untuk menargetkan beberapa browser dalam konteks keamanan yang berbeda, memungkinkan profesional keamanan untuk menyebarkan vektor dan modul serangan tertentu secara real-time. Ia memiliki perpustakaan modul perintah yang luas dan mendukung pengembangan modul khusus.
+Alat Dekompilasi, Pembongkaran, dan Debugging Umum
+
+Alat debugger ini menyediakan kemampuan untuk melakukan debug, menganalisis, dan merekayasa balik perangkat lunak dan biner.
+
+GNU Project Debugger (GDB) : Debugger populer yang digunakan untuk memecahkan masalah dan menemukan bug dalam perangkat lunak. Mendukung berbagai bahasa pemrograman.
+Windows Debugger (WinDbg) : Digunakan untuk menganalisis kernel dan kode mode pengguna di Windows, analisis crash dump, dan analisis register CPU.
+OllyDbg : Debugger untuk menganalisis aplikasi Windows 32-bit, biasa digunakan dalam pengujian penetrasi dan rekayasa balik.
+edb Debugger : Debugger lintas platform yang mendukung arsitektur AArch32, x86, dan x86-64, termasuk dalam Kali Linux.
+Immunity Debugger : Alat yang populer di kalangan penguji penetrasi dan peneliti keamanan, digunakan untuk menulis eksploitasi, menganalisis malware, dan merekayasa balik file biner.
+IDA : Disassembler, debugger, dan decompiler komersial yang banyak digunakan untuk menganalisis file biner dan rekayasa balik.
+Objdump : Program Linux untuk menampilkan informasi tentang file objek, biasanya digunakan untuk pemeriksaan cepat dan pembongkaran biner.
+Alat Umum untuk Forensik
+
+Alat-alat ini membantu penyelidik forensik dalam menganalisis bukti digital, memulihkan data, dan mengekstraksi informasi berharga untuk penyelidikan.
+
+Otopsi : Platform forensik digital sumber terbuka dengan antarmuka grafis untuk menganalisis bukti digital.
+The Sleuth Kit : Kumpulan alat baris perintah untuk image disk dan analisis sistem file.
+Volatilitas : Kerangka forensik memori untuk menganalisis memori volatil dalam suatu sistem.
+EnCase : Alat forensik digital komersial dengan fitur seperti pencitraan disk, pemulihan file, dan analisis email.
+FTK (Forensic Toolkit) : Alat forensik digital komersial untuk pencitraan disk, analisis file, dan ukiran data.
+Wireshark : Penganalisis protokol jaringan untuk forensik jaringan dan menangkap lalu lintas jaringan.
+Cellebrite UFED : Alat forensik seluler untuk mengekstraksi dan menganalisis data dari perangkat seluler.
+Forensik X-Ways : Alat forensik komprehensif dengan fitur untuk pencitraan disk, analisis file, dan analisis registri.
+Alat Umum untuk Jaminan Perangkat Lunak
+
+Alat-alat ini membantu memastikan kualitas dan keamanan perangkat lunak dengan mendeteksi bug, kerentanan, dan potensi masalah.
+
+SpotBugs : Sebelumnya dikenal sebagai FindBugs, SpotBugs adalah alat analisis statis untuk aplikasi Java yang membantu mengidentifikasi bug dan potensi masalah dalam kode Java.
+Findsecbugs : Findsecbugs adalah alat khusus Java yang berfokus untuk menemukan bug terkait keamanan dalam aplikasi Java. Ini terintegrasi dengan baik dengan sistem integrasi berkelanjutan seperti Jenkins dan SonarQube.
+SonarQube : SonarQube adalah alat komprehensif untuk mengidentifikasi kerentanan dan masalah kualitas dalam kode. Ini mendukung integrasi berkelanjutan dan lingkungan DevOps.
+Pengujian Fuzzers dan Fuzz : Pengujian fuzz adalah teknik yang digunakan untuk mengidentifikasi kesalahan perangkat lunak dan kerentanan keamanan dengan memasukkan data acak atau format yang salah. Fuzzers adalah alat yang digunakan untuk pengujian fuzz. Berikut beberapa contohnya:
+Peach : Peach adalah fuzzer populer yang menawarkan versi gratis (sumber terbuka) yang disebut Peach Fuzzer Community Edition dan versi komersial.
+Mutiny Fuzzing Framework : Dikembangkan oleh Cisco, Mutiny Fuzzing Framework adalah fuzzer sumber terbuka yang memutar ulang file pengambilan paket (pcaps) melalui fuzzer mutasi.
+American Fuzzy Lop (AFL) : AFL adalah fuzzer yang banyak digunakan yang menggabungkan instrumentasi waktu kompilasi dan algoritma genetika untuk meningkatkan cakupan fungsional kasus uji fuzzing.
+Alat Nirkabel
+
+Wifite2: Program Python untuk menguji jaringan nirkabel.
+Jalur akses jahat: Anda dapat dengan mudah membuat titik akses jahat dengan menggunakan alat sumber terbuka seperti hostapd.
+EAPHammer: Alat ini dapat digunakan untuk melakukan serangan kembaran jahat.
+mdk4: Alat ini digunakan untuk melakukan fuzzing, penghindaran IDS, dan serangan nirkabel lainnya.
+Spooftooph: Alat ini digunakan untuk memalsukan dan mengkloning perangkat Bluetooth.
+Reaver: Alat ini digunakan untuk melakukan serangan brute force terhadap implementasi Wi-Fi Protected Setup (WPS).
+Wireless Geographic Logging Engine (WiGLE): Ini adalah alat penggerak perang.
+Fern Wi-Fi Cracker: Alat ini digunakan untuk melakukan berbagai serangan terhadap jaringan nirkabel, termasuk memecahkan kunci WEP, WPA, dan WPS.
+Alat Steganografi
+
+OpenStego: Anda dapat mengunduh alat steganografi ini dari https://www.openstego.com.
+salju: Alat steganografi berbasis teks.
+Coagula: Program ini dapat digunakan untuk membuat suara dari suatu gambar.
+Sonic Visualiser: Alat ini dapat digunakan untuk menganalisis informasi yang tertanam dalam rekaman musik atau audio.
+TinEye: Situs web pencarian gambar terbalik.
+metagoofil: Alat ini dapat digunakan untuk mengekstrak informasi metadata dari dokumen dan gambar.
+Alat Awan
+
+ScoutSuite: Alat dapat digunakan untuk mengungkap kerentanan di AWS, Azure, Google Cloud Platform, dan platform cloud lainnya.
+CloudBrute: Alat enumerasi cloud.
+Pacu: Kerangka kerja untuk eksploitasi AWS.
+Cloud Custodian: Alat keamanan, tata kelola, dan manajemen cloud.
